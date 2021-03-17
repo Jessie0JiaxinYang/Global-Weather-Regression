@@ -2,6 +2,10 @@
 import pandas as pd
 import numpy as np
 import statsmodels.api as sm
+import datettime 
+
+starttime = datetime.datetime.now()
+
 
 table = pd.read_excel(r'C:\Users\jiaxi\OneDrive\桌面\RBAC 2021\Weather Seasonality - Global\2021 0316.xlsx', sheet_name = 'Transfer')
 
@@ -223,3 +227,9 @@ for i in [1, 2, 9, 13, 15, 17, 18, 20, 24, 25, 26, 29, 30, 31, 32, 33, 35, 36, 3
  
 ###########
  output2.to_csv('C:\\Users\\jiaxi\\OneDrive\\桌面\\RBAC 2021\\Weather Seasonality - Global\\Regression Results - dev% as y.csv',index=None)
+
+          
+          endtime = datetime.datetime.now()
+print("Congradulations! Finished") 
+print("duraion", endtime - starttime)
+
