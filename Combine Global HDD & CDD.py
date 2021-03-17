@@ -216,7 +216,7 @@ EgyptCDD = EgyptCDD[order]
 table = pandas.read_csv(r'C:\Users\jiaxi\OneDrive\桌面\RBAC 2021\Weather Seasonality - Global\Degree Days\Egypt HDD.csv')
 EgyptHDD = table.iloc[6:, 0:2]
 EgyptHDD.columns = ['date','value']
-EgyptHDD.insert(EgyptHDD.shape[1], 'area', 'Egypt')
+EgyptHDD.insert(EgyptHDD.shape[1], 'area', 'Egypt (Arab Rep.)')
 EgyptHDD.insert(EgyptHDD.shape[1], 'degree', 'HDD')
 order = ['area', 'degree', 'date', 'value']
 EgyptHDD = EgyptHDD[order]
@@ -852,7 +852,7 @@ UKCDD = UKCDD[order]
 table = pandas.read_csv(r'C:\Users\jiaxi\OneDrive\桌面\RBAC 2021\Weather Seasonality - Global\Degree Days\UK HDD.csv')
 UKHDD = table.iloc[6:, 0:2]
 UKHDD.columns = ['date','value']
-UKHDD.insert(UKHDD.shape[1], 'area', 'UK')
+UKHDD.insert(UKHDD.shape[1], 'area', 'United Kingdom')
 UKHDD.insert(UKHDD.shape[1], 'degree', 'HDD')
 order = ['area', 'degree', 'date', 'value']
 UKHDD = UKHDD[order]
